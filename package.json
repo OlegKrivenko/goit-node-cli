@@ -16,5 +16,8 @@
     "url": "https://github.com/OlegKrivenko/goit-node-cli/issues"
   },
   "homepage": "https://github.com/OlegKrivenko/goit-node-cli#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "commander": "^14.0.2"
+  }
 }
