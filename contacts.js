@@ -3,6 +3,8 @@ import path from "path";
 
 const contactsPath = path.resolve("db", "contacts.json");
 
+const updateContacts = (contacts) => fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+
 async function listContacts() {
   // ...твій код. Повертає масив контактів.
   const buffer = await fs.readFile(contactsPath, "utf-8");
