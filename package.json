@@ -19,6 +19,7 @@
   "homepage": "https://github.com/OlegKrivenko/goit-node-cli#readme",
   "description": "",
   "dependencies": {
-    "commander": "^14.0.2"
+    "commander": "^14.0.2",
+    "nanoid": "^5.1.6"
   }
 }
