@@ -31,4 +31,13 @@ async function addContact(name, email, phone) {
 
 async function removeContact(contactId) {
   // ...твій код. Повертає об'єкт видаленого контакту. Повертає null, якщо контакт з таким id не знайдений.
+  const contacts = await listContacts();
+  const index = contacts.findIndex((contact) => contact.id === contactId);
+  if (index === -1) {
+    return null;
+  }
+
+  const [removedContact] = contacts.splice(index, 1);
+  await updateContacts(contacts);
+  return removedContact;
 }
