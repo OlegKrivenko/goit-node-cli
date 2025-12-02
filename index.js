@@ -9,7 +9,9 @@ program
   .option("-p, --phone <type>", "user phone");
 
 program.parse();
+
 const options = program.opts();
+console.log(options);
 
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
